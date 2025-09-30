@@ -1,7 +1,7 @@
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 
-function sayHello() {
-    
+function loadComplete() {
+  console.log("Page has finished loading.");
 }
-// document.addEventListener('DOMContentLoaded', sayHello);
+document.addEventListener("DOMContentLoaded", loadComplete);

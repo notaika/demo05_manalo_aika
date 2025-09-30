@@ -1,36 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+    <meta name="comp1800 template" content="My 1800 App" />
 
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Other libraries go here -->
 
     <!-- Link to styles of your own -->
-    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!------------------------------>
     <!-- Your HTML Layout go here -->
+    <nav
+      class="navbar navbar-dark bg-warning"
+      aria-label="First navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.svg" height="36" />
+          PotLuck
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample01"
+          aria-controls="navbarsExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Pricing</a
+              >
+            </li>
+          </ul>
+          <form role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">
+            Welcome to PotLuck!
+          </h1>
+          <p class="col-lg-10 fs-4">
+            The best one-bowl meals from our community, ready in minutes.
+          </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me" /> Remember me
+              </label>
+            </div>
+            <button
+              onclick="window.location.href='login.html'"
+              class="w-100 btn btn-lg btn-primary bg-warning mb-3"
+              type="button"
+            >
+              Login
+            </button>
+            <button
+              class="w-100 btn btn-lg btn-primary bg-warning"
+              type="submit"
+            >
+              Sign up
+            </button>
+
+            <hr class="my-4" />
+            <small class="text-body-secondary"
+              >By clicking Sign up, you agree to the terms of use.</small
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/images/community.png"
+              class="card-img-top"
+              alt="Community of people embracing"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Simplify Your Suppers</h5>
+              <p class="card-text">
+                All of our recipes are designed to be made in a single bowl.
+                That means you spend less time cleaning up a mountain of dishes
+                and more time enjoying a delicious, hassle-free meal.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/images/recipe-book.png"
+              class="card-img-top"
+              alt="Recipe book icon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Discover Community Gems</h5>
+              <p class="card-text">
+                Move beyond generic food blogs. Our recipe book is built by home
+                cooks just like you, sharing their trusted, family-tested
+                one-bowl creations that you won't find anywhere else.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/images/cook-together.png"
+              class="card-img-top"
+              alt="People cooking together illustration"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Share Your Signature Bowl</h5>
+              <p class="card-text">
+                Have a go-to one-bowl recipe that everyone loves? Add it to our
+                growing collection! Help others discover a new favorite and
+                build your own personal digital cookbook to share with friends.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!------------------------------>
     <!-- Stuff for body goes here -->
-
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
 
     <!-- Link to scripts of your own -->
-    <!-- <script type="module" src="./src/main.js"></script> -->
-
-</body>
-
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
