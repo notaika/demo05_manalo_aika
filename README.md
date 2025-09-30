@@ -1,6 +1,6 @@
 # Potluck
 
-!(images/your-app-screenshot.png) ## Overview
+## Overview
 **Potluck** is a client-side JavaScript web application that helps users discover, share, and enjoy **one-bowl recipes**. The app displays a curated list of meals sourced from a community of home cooks, each with details like name, ingredients, and instructions. Users can browse the list, contribute their own creations, and mark their favorite recipes for easy access later.
 
 Developed for the COMP 1800 course, this project applies **User-Centered Design** practices and agile project management and demonstrates integration with **Firebase** backend services for storing recipes and user favorites.
